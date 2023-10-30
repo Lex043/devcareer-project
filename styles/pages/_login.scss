@@ -2,6 +2,8 @@
     padding: 20px 10px;
     @include media(">=tablet") {
         padding: 30px 40px;
+        width: 80%;
+        margin: 0 auto;
     }
 
     @include media(">=desktop") {
@@ -9,6 +11,8 @@
         padding: 0;
         height: 100vh;
         grid-template-columns: 50% 50%;
+        width: 100%;
+        margin: 0;
     }
 
     .login__desktop {
