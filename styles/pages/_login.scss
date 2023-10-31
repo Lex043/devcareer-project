@@ -182,6 +182,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 20px;
         border: 1px solid $primary-color;
         padding: 10px 30px;
 
@@ -194,11 +195,6 @@
             font-weight: 600;
             font-size: 12px;
         }
-    }
-
-    &__with--google--img {
-        width: 30px;
-        height: 30px;
     }
 
     &__with--google--text,
