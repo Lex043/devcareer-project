@@ -25,26 +25,30 @@
         &__logo {
             img {
                 width: 80px;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
 
         &__container {
-            padding-top: 40px;
+            padding-top: 30px;
 
             h1 {
                 font-weight: bold;
-                font-size: 30px;
+                @include calculateRem(35);
             }
 
             p {
-                font-size: 12px;
-                padding: 15px 0;
+                @include calculateRem(12);
+                padding: 20px 0;
             }
         }
 
         &__main--img {
+            padding-top: 40px;
             img {
-                width: 60%;
+                width: 50%;
                 height: 30%;
             }
         }
@@ -68,7 +72,7 @@
             color: #fff;
             padding: 12px 18px;
             border: none;
-            font-size: medium;
+            @include calculateRem(15);
             background-color: $btn-color;
             border-radius: 5px;
 
@@ -84,12 +88,12 @@
 
         h1 {
             font-weight: bolder;
-            font-size: 20px;
+            @include calculateRem(20);
             padding-bottom: 12px;
         }
 
         p {
-            font-size: 13px;
+            @include calculateRem(12);
             padding-bottom: 22px;
         }
     }
@@ -104,7 +108,7 @@
             color: #fff;
             background-color: $btn-color;
             border: none;
-            font-size: 15px;
+            @include calculateRem(15);
             padding: 14px;
             border-radius: 5px;
 
@@ -139,10 +143,14 @@
         justify-content: space-between;
 
         h2 {
-            font-size: 12px;
+            @include calculateRem(12);
             font-weight: 600;
             color: $btn-color;
             font-weight: bold;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 
@@ -152,14 +160,14 @@
         gap: 7px;
 
         p {
-            font-size: 12px;
+            @include calculateRem(12);
             font-weight: 600;
         }
     }
 
     &__or--section {
         color: $primary-color;
-        font-size: 12px;
+        @include calculateRem(12);
         display: flex;
         align-items: center;
         gap: 7px;
@@ -193,13 +201,13 @@
         p {
             color: $primary-color;
             font-weight: 600;
-            font-size: 12px;
+            @include calculateRem(12);
         }
     }
 
     &__with--google--text,
     &__with--apple--text {
-        font-size: 12px;
+        @include calculateRem(12);
         color: $primary-color;
         font-weight: 600;
         padding: 0 14px;
@@ -212,7 +220,7 @@
 
         h1,
         p {
-            font-size: 12px;
+            @include calculateRem(12);
         }
 
         p {
